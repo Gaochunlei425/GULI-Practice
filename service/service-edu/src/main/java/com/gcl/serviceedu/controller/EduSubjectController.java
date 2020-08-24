@@ -22,7 +22,7 @@ import java.util.List;
  * @since 2020-08-01
  */
 @Api(description="课程分类管理")
-@CrossOrigin //跨域
+//@CrossOrigin //跨域
 @RestController
 @RequestMapping("/eduservice/subject")
 public class EduSubjectController {

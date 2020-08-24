@@ -20,7 +20,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/educms/bannerfront")
 @Api(description = "网站首页Banner列表")
-@CrossOrigin //跨域
+//@CrossOrigin //跨域
 public class BannerFrontController {
 
     @Resource

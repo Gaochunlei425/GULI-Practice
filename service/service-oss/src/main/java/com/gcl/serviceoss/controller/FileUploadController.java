@@ -21,7 +21,7 @@ import javax.annotation.Resource;
 @Api(description="阿里云文件管理")
 @RestController
 @RequestMapping("/eduoss/fileoss")
-@CrossOrigin
+//@CrossOrigin
 public class FileUploadController {
 
 

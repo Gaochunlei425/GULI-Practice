@@ -28,7 +28,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/eduservice/comment")
-@CrossOrigin
+//@CrossOrigin
 @Api(description="评论操作管理")
 @Slf4j
 public class CommentFrontController {

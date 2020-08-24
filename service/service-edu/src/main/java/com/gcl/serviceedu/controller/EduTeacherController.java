@@ -31,7 +31,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/eduservice/teacher")
 @Slf4j
-@CrossOrigin
+//@CrossOrigin
 public class EduTeacherController {
 
     @Resource
