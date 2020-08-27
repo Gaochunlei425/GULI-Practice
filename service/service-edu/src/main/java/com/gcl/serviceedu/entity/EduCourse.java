@@ -23,6 +23,7 @@ import lombok.experimental.Accessors;
  * @author gcl
  * @since 2020-08-02
  */
+
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
