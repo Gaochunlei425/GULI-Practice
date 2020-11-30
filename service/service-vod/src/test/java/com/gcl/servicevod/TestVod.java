@@ -15,8 +15,8 @@ import java.util.List;
 public class TestVod {
 
     public static void main(String[] args) {
-        String accessKeyId = "LTAI4GJ8cD8WkhVxFXy6ptNg";
-        String accessKeySecret = "WDrkfMggrQBy7sUEEEfy9FhBgoo0wb";
+        String accessKeyId = "";
+        String accessKeySecret = "";
 
         String title = "魔王学院的不适合者第05集";   //上传之后文件名称
         String fileName = "C:\\Users\\gaoch\\Documents\\Tencent Files\\383834050\\FileRecv\\MobileFile\\魔王学院的不适合者第05集.mp4";  //本地文件路径和名称
@@ -43,7 +43,7 @@ public class TestVod {
     //1 根据视频iD获取视频播放凭证
     public static void getPlayAuth() throws Exception{
 
-        DefaultAcsClient client = AliyunVodSDKUtils.initVodClient("LTAI4FvvVEWiTJ3GNJJqJnk7", "9st82dv7EvFk9mTjYO1XXbM632fRbG");
+        DefaultAcsClient client = AliyunVodSDKUtils.initVodClient("", "");
 
         GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
         GetVideoPlayAuthResponse response = new GetVideoPlayAuthResponse();
@@ -56,14 +56,14 @@ public class TestVod {
     //1 根据视频iD获取视频播放地址
     public static void getPlayUrl() throws Exception{
         //创建初始化对象
-        DefaultAcsClient client = AliyunVodSDKUtils.initVodClient("LTAI4FvvVEWiTJ3GNJJqJnk7", "9st82dv7EvFk9mTjYO1XXbM632fRbG");
+        DefaultAcsClient client = AliyunVodSDKUtils.initVodClient("", "");
 
         //创建获取视频地址request和response
         GetPlayInfoRequest request = new GetPlayInfoRequest();
         GetPlayInfoResponse response = new GetPlayInfoResponse();
 
         //向request对象里面设置视频id
-        request.setVideoId("474be24d43ad4f76af344b9f4daaabd1");
+        request.setVideoId("");
 
         //调用初始化对象里面的方法，传递request，获取数据
         response = client.getAcsResponse(request);
